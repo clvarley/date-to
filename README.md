@@ -74,7 +74,7 @@ object but future versions of the library will (hopefully) expose more.
 As library standard: uppercased letters will include leading zeros where
 required, while lowercased letters display the value _'as is'_.
 
-### Escaping
+### Escaping
 
 You may now be asking yourself: _"What happens if I want to include any of those
 letters in my output?"_
