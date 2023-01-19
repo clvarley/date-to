@@ -22,7 +22,7 @@ import { dateToFormat } from "date-to";
 **CommonJS**
 
 ```js
-const { simpleScroll } = require("date-to");
+const { dateToFormat } = require("date-to");
 ```
 
 ## Getting Started
