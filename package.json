@@ -1,0 +1,23 @@
+{
+  "name": "date-it",
+  "version": "1.0.0",
+  "description": "Convert dates to and from strings with ease.",
+  "type": "module",
+  "keywords": [
+    "date",
+    "time",
+    "datetime",
+    "parse",
+    "format"
+  ],
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint ./src"
+  },
+  "author": "clvarley",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "typescript": "^4.9.4"
+  }
+}
