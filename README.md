@@ -11,7 +11,7 @@ npm install --save date-to
 ```
 
 After npm has downloaded the library, you can start importing and using it as
-expected:
+normal:
 
 **ES6 module<sup>*preferred</sup>**
 
@@ -57,7 +57,7 @@ placeholders can be used.
 
 ## Formating
 
-At the moment we only support year, month and day components of the date
+At the moment we only support the year, month and day components of the date
 object but future versions of the library will (hopefully) expose more.
 
 ### Available Placeholders
@@ -82,7 +82,7 @@ letters in my output?"_
 Luckily, `date-to` also includes a utility for escaping strings, allowing you to
 still include characters in the output without them being expanded.
 
-Without escaping, you might end up in a situation like this:
+Without escaping you might end up in a situation like this:
 
 ```js
 import { dateToFormat } from "date-to";
@@ -91,11 +91,11 @@ import { dateToFormat } from "date-to";
 const myBirthday = new Date(1952, 2, 11);
 const output = dateToFormat(myBirthday, "My birthday is: Y-M-D");
 
-console.log(output); // M1952 birth11a1952 is: 1952-03-11
+console.log(output); // 031952 birth11a1952 is: 1952-03-11
 ```
 
-As you can see, the `d` in "birthday" and the `y` in both "My" and "birthday"
-have been expanded to their relevant date components. This is less than ideal.
+As you can see, the `d` and `y` in "birthday" and the `M` and `y` in "My" have
+been expanded to their relevant date components. This is less than ideal.
 
 There are 2 ways to resolve this.
 
@@ -106,12 +106,12 @@ JavaScript treats the backslash character, you will have to double escape it!)
 import { dateToFormat } from "date-to";
 
 const myBirthday = new Date(1952, 2, 11);
-const output = dateToFormat(myBirthday, "M\\y birth\\da\\y is: Y-M-D");
+const output = dateToFormat(myBirthday, "\\M\\y birth\\da\\y is: Y-M-D");
 
 console.log(output); // My birthday is: 1952-03-11
 ```
 
-Or, you can use the bundled `escape` utility function:
+Or you can use the bundled `escape` utility function:
 
 ```js
 import { dateToFormat, escape } from "date-to";
@@ -130,8 +130,9 @@ will also work just fine.
 
 ## Examples
 
-For completeness (and to help you see the library in action) here are some
-examples of what you could use the library for.
+That's everything you need to know to get started with `date-to`, but for the
+sake of completeness (and to help you see the library in action) here are some
+examples of what you might choose to use the library for.
 
 **Day of the month:**
 
@@ -140,10 +141,10 @@ import { dateToFormat, escape } from "date-to";
 
 // ...
 
-const label = escape("days into the month")
+const label = escape("day(s) into the month")
 const output = dateToFormat(new Date(), `m ${label}`);
 
-console.log(output); // 19 days into the month
+console.log(output); // 19 day(s) into the month
 ```
 
 **Conditional formatting:**
