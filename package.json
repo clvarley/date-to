@@ -1,18 +1,17 @@
 {
-  "name": "date-it",
+  "name": "date-to",
   "version": "1.0.0",
-  "description": "Convert dates to and from strings with ease.",
-  "type": "module",
+  "description": "Convert dates to strings with ease.",
   "keywords": [
     "date",
     "time",
     "datetime",
-    "parse",
     "format"
   ],
   "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "lint": "eslint ./src"
+    "build": "tsc"
   },
   "author": "clvarley",
   "license": "MIT",

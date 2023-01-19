@@ -4,7 +4,9 @@
     "module": "commonjs",
     "strict": true,
     "skipLibCheck": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "types"
   },
   "files": [
     "src/index.ts"
