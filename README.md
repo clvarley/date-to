@@ -128,7 +128,7 @@ console.log(output); // My birthday is: 1952-03-11
 syntax, but traditional string concatenation using `+` or [`String.concat()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat)
 will also work just fine.
 
-## Examples
+## Examples
 
 That's everything you need to know to get started with `date-to`, but for the
 sake of completeness (and to help you see the library in action) here are some
