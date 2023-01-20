@@ -13,7 +13,7 @@ npm install --save date-write
 After npm has downloaded the library, you can start importing and using it as
 normal:
 
-**ES6 module<sup>*preferred</sup>**
+**ES6 module<sup>\*preferred</sup>**
 
 ```js
 import { dateToFormat } from "date-write";
