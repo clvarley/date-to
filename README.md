@@ -1,13 +1,13 @@
-# date-to
+# date-write
 
 Convert dates to strings with ease.
 
 ## Installation
 
-To install `date-to` just include it to your project like so:
+To install `date-write` just include it to your project like so:
 
 ```sh
-npm install --save date-to
+npm install --save date-write
 ```
 
 After npm has downloaded the library, you can start importing and using it as
@@ -16,13 +16,13 @@ normal:
 **ES6 module<sup>*preferred</sup>**
 
 ```js
-import { dateToFormat } from "date-to";
+import { dateToFormat } from "date-write";
 ```
 
 **CommonJS**
 
 ```js
-const { dateToFormat } = require("date-to");
+const { dateToFormat } = require("date-write");
 ```
 
 ## Getting Started
@@ -36,14 +36,14 @@ to the [`Date.getFullYear()`](https://developer.mozilla.org/en-US/docs/Web/JavaS
 and [`Date.getDate()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate)
 methods and then construct the string manually.
 
-With `date-to` you simply specify your desired output using the
+With `date-write` you simply specify your desired output using the
 [supported placeholders](#available-placeholders) and the library will generate
 the string for you.
 
 For example:
 
 ```js
-import { dateToFormat } from "date-to";
+import { dateToFormat } from "date-write";
 
 // Remember: Months in JS are 0 indexed!
 const y2k = new Date(2000, 0, 1);
@@ -79,13 +79,13 @@ required, while lowercased letters display the value _'as is'_.
 You may now be asking yourself: _"What happens if I want to include any of those
 letters in my output?"_
 
-Luckily, `date-to` also includes a utility for escaping strings, allowing you to
-still include characters in the output without them being expanded.
+Luckily, `date-write` also includes a utility for escaping strings, allowing you
+to still include characters in the output without them being expanded.
 
 Without escaping you might end up in a situation like this:
 
 ```js
-import { dateToFormat } from "date-to";
+import { dateToFormat } from "date-write";
 
 // Remember: Months in JS are 0 indexed!
 const myBirthday = new Date(1952, 2, 11);
@@ -103,7 +103,7 @@ The first is to escape those characters with a backslash. (Because of how
 JavaScript treats the backslash character, you will have to double escape it!)
 
 ```js
-import { dateToFormat } from "date-to";
+import { dateToFormat } from "date-write";
 
 const myBirthday = new Date(1952, 2, 11);
 const output = dateToFormat(myBirthday, "\\M\\y birth\\da\\y is: Y-M-D");
@@ -114,7 +114,7 @@ console.log(output); // My birthday is: 1952-03-11
 Or you can use the bundled `escape` utility function:
 
 ```js
-import { dateToFormat, escape } from "date-to";
+import { dateToFormat, escape } from "date-write";
 
 const myBirthday = new Date(1952, 2, 11);
 const label = escape("My birthday is:");
@@ -130,14 +130,14 @@ will also work just fine.
 
 ## Examples
 
-That's everything you need to know to get started with `date-to`, but for the
+That's everything you need to know to get started with `date-write`, but for the
 sake of completeness (and to help you see the library in action) here are some
 examples of what you might choose to use the library for.
 
 **Day of the month:**
 
 ```js
-import { dateToFormat, escape } from "date-to";
+import { dateToFormat, escape } from "date-write";
 
 // ...
 
@@ -150,7 +150,7 @@ console.log(output); // 19 day(s) into the month
 **Conditional formatting:**
 
 ```js
-import { dateToFormat } from "date-to";
+import { dateToFormat } from "date-write";
 
 // ...
 
@@ -164,7 +164,7 @@ console.log(output); // Either: 19/01/2023 OR 1/19/2023
 **Last login date:**
 
 ```js
-import { dateToFormat } from "date-to";
+import { dateToFormat } from "date-write";
 
 // ...
 

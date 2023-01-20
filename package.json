@@ -1,8 +1,8 @@
 {
-  "name": "date-to",
+  "name": "date-write",
   "version": "1.0.0",
   "description": "Convert dates to strings with ease.",
-  "homepage": "https://github.com/clvarley/date-to",
+  "homepage": "https://github.com/clvarley/date-write",
   "keywords": [
     "date",
     "time",

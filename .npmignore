@@ -1,1 +1,2 @@
-# Here to stop the /types and /dist folders from being ignored
+# Stop TS files being included in bundle
+/src
