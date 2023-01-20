@@ -22,8 +22,8 @@ type FormatMap = {
 const FORMAT: FormatMap = {
     "Y": (subject) => minDigits(subject.getFullYear(), 4),
     "y": (subject) => subject.getFullYear().toString(),
-    "M": (subject) => minDigits(subject.getMonth(), 2),
-    "m": (subject) => subject.getMonth().toString(),
+    "M": (subject) => minDigits(subject.getMonth() + 1, 2),
+    "m": (subject) => (subject.getMonth() + 1).toString(),
     "D": (subject) => minDigits(subject.getDate(), 2),
     "d": (subject) => subject.getDate().toString()
 };
