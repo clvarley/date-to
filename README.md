@@ -13,7 +13,7 @@ npm install --save date-write
 After npm has downloaded the library, you can start importing and using it as
 normal:
 
-**ES6 module<sup>*preferred</sup>**
+**ES6 module<sup>\*preferred</sup>**
 
 ```js
 import { dateToFormat } from "date-write";
@@ -67,7 +67,7 @@ object but future versions of the library will (hopefully) expose more.
 | `Y` | 4 digit representation of the year (with leading zeros if required) | `2022`<br>`0774` |
 | `y` | The year (no leading zeros) | `2022`<br>`774` |
 | `M` | 2 digit representation of the month (with leading zeros if required) | `11`<br>`05` |
-| `m` | The month (no leading zeros) | `11`<br>`05` |
+| `m` | The month (no leading zeros) | `11`<br>`5` |
 | `D` | 2 digit representation of the day of the month (with leading zeros if required) | `07`<br>`31` |
 | `d` | The day of the month (no leading zeros) | `7`<br>`31` |
 
